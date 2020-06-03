@@ -9,6 +9,7 @@
 #define ESC char(27)
 #define ENTER char(13)
 
+
 #define TABLE_LENGTH 72
 #define TABLE_WIDTH  20
 

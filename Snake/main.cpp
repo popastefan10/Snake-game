@@ -6,6 +6,7 @@
 #include "Headers/food.h"
 #include "Headers/snake.h"
 #include "Headers/start_menu.h"
+#include "Headers/options_menu.h"
 #include "Headers/pause_menu.h"
 #include "Headers/statistics.h"
 
@@ -109,7 +110,7 @@ int main() {
         system("cls");
       }
 
-      Sleep(500);
+      Sleep(1000 / Options::snakeSpeed);
     }
   }
 

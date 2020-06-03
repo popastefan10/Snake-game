@@ -9,6 +9,6 @@
 bool startMenu();
 void drawStartMenu(int);
 
-void loadOptions();
+
 
 #endif // START_MENU_H_INCLUDED

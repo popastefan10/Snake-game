@@ -1,4 +1,5 @@
 #include "../Headers/start_menu.h"
+#include "../Headers/options_menu.h"
 
 using namespace std;
 
@@ -22,12 +23,7 @@ bool startMenu() {
         return true;
       else if(selected == 1) { /// Options
         system("cls");
-        loadOptions();
-        while(true) {
-          hideCursor();
-          if(GetAsyncKeyState(ESC) & MSB)
-            break;
-        }
+        Options::loadOptions();
       }
       else if(selected == 2) { /// Help
         system("cls");
@@ -61,9 +57,3 @@ void drawStartMenu(int selected) {
   setTextColour(WHITE);
 }
 
-/// loads the option page
-
-void loadOptions() {
-  gotoXY(1, 0);
-  printf("<- Press Esc to go back");
-}
