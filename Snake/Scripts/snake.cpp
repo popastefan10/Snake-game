@@ -79,6 +79,11 @@ bool snake::collision() {
   return false;
 }
 
+
+
+
+
+
 /** move / modify the body ----- **/
 
 void snake::moveBody() {
