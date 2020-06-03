@@ -1,0 +1,123 @@
+# depslib dependency file v1.0
+1590516492 source:c:\stefan\info\jocuri\snake\main.cpp
+	<iostream>
+	<cstdio>
+	<time.h>
+	<cstdlib>
+	<cmath>
+	"Headers/food.h"
+	"Headers/snake.h"
+	"Headers/start_menu.h"
+	"Headers/pause_menu.h"
+	"Headers/statistics.h"
+
+1589880717 c:\stefan\info\jocuri\snake\snake.h
+	<vector>
+	"snakeBody.h"
+	"snakeBody.cpp"
+
+1589880154 c:\stefan\info\jocuri\snake\snakebody.h
+	<windows.h>
+	"functii.cpp"
+
+1589880229 c:\stefan\info\jocuri\snake\snakebody.cpp
+	"snakeBody.h"
+
+1589881050 c:\stefan\info\jocuri\snake\snake.cpp
+	<iostream>
+	<cstdio>
+	"snake.h"
+
+1589921155 c:\stefan\info\jocuri\snake\functii.cpp
+	<windows.h>
+
+1589879717 c:\stefan\info\jocuri\snake\food.h
+	<windows.h>
+
+1589881100 c:\stefan\info\jocuri\snake\food.cpp
+	<cstdlib>
+	<time.h>
+	"food.h"
+
+1590254329 c:\stefan\info\jocuri\snake\headers\food.h
+	<windows.h>
+	"functii.h"
+
+1590251515 c:\stefan\info\jocuri\snake\scripts\functii.cpp
+	"../Headers/functii.h"
+
+1590053892 c:\stefan\info\jocuri\snake\scripts\food.cpp
+	<cstdlib>
+	<time.h>
+	"../Headers/food.h"
+
+1590256725 c:\stefan\info\jocuri\snake\headers\snake.h
+	<vector>
+	"snakeBody.h"
+
+1590053816 c:\stefan\info\jocuri\snake\headers\snakebody.h
+	<windows.h>
+	"functii.h"
+
+1590051695 c:\stefan\info\jocuri\snake\scripts\snakebody.cpp
+	"../Headers/snakeBody.h"
+
+1590051689 c:\stefan\info\jocuri\snake\scripts\snake.cpp
+	<iostream>
+	<cstdio>
+	"../Headers/snake.h"
+
+1590254291 source:c:\stefan\info\jocuri\snake\scripts\food.cpp
+	<cstdlib>
+	<time.h>
+	"../Headers/food.h"
+
+1590781255 source:c:\stefan\info\jocuri\snake\scripts\functii.cpp
+	"../Headers/functii.h"
+
+1590781541 c:\stefan\info\jocuri\snake\headers\functii.h
+	<windows.h>
+	<cstdio>
+	<iostream>
+
+1590256711 source:c:\stefan\info\jocuri\snake\scripts\snake.cpp
+	<iostream>
+	<cstdio>
+	"../Headers/snake.h"
+
+1590256826 source:c:\stefan\info\jocuri\snake\scripts\snakebody.cpp
+	"../Headers/snakeBody.h"
+
+1590781307 source:c:\stefan\info\jocuri\snake\scripts\start_menu.cpp
+	"../Headers/start_menu.h"
+
+1590514028 c:\stefan\info\jocuri\snake\headers\start_menu.h
+	<windows.h>
+	<iostream>
+	"functii.h"
+	"help_menu.h"
+
+1590250851 c:\stefan\info\jocuri\snake\headers\help_menu.h
+	"functii.h"
+
+1590256996 c:\stefan\info\jocuri\snake\scripts\help_menu.cpp
+	"../Headers/help_menu.h"
+
+1590513884 c:\stefan\info\jocuri\snake\headers\pause_menu.h
+
+1590513726 c:\stefan\info\jocuri\snake\scripts\pause_menu.cpp
+	"../Headers/pause_menu.h"
+
+1590780837 source:c:\stefan\info\jocuri\snake\scripts\help_menu.cpp
+	"../Headers/help_menu.h"
+
+1590513966 source:c:\stefan\info\jocuri\snake\scripts\pause_menu.cpp
+	"../Headers/pause_menu.h"
+	"../Headers/functii.h"
+
+1590516239 c:\stefan\info\jocuri\snake\headers\statistics.h
+
+1590515841 source:c:\stefan\info\jocuri\snake\scripts\statistics.cpp
+	"../Headers/statistics.h"
+	"../Headers/functii.h"
+

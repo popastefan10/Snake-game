@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Snake" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Snake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Snake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Headers/food.h" />
+		<Unit filename="Headers/functii.h" />
+		<Unit filename="Headers/help_menu.h" />
+		<Unit filename="Headers/pause_menu.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Headers/snake.h" />
+		<Unit filename="Headers/snakeBody.h" />
+		<Unit filename="Headers/start_menu.h" />
+		<Unit filename="Headers/statistics.h" />
+		<Unit filename="Scripts/food.cpp" />
+		<Unit filename="Scripts/functii.cpp" />
+		<Unit filename="Scripts/help_menu.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Scripts/pause_menu.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Scripts/snake.cpp" />
+		<Unit filename="Scripts/snakeBody.cpp" />
+		<Unit filename="Scripts/start_menu.cpp" />
+		<Unit filename="Scripts/statistics.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
