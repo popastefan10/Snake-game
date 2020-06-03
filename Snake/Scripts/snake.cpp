@@ -75,7 +75,7 @@ bool snake::collision() {
   for(int i = 1; i < bodyLength; i++)
     if(body[i].getX() == headX && body[i].getY() == headY)
       return true;
-
+  /// Cod modificat de nic
   return false;
 }
 
