@@ -35,7 +35,6 @@
 		<Unit filename="Headers/food.h" />
 		<Unit filename="Headers/functii.h" />
 		<Unit filename="Headers/help_menu.h" />
-		<Unit filename="Headers/options_menu.h" />
 		<Unit filename="Headers/pause_menu.h">
 			<Option target="Debug" />
 		</Unit>
@@ -48,7 +47,6 @@
 		<Unit filename="Scripts/help_menu.cpp">
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="Scripts/options_menu.cpp" />
 		<Unit filename="Scripts/pause_menu.cpp">
 			<Option target="Debug" />
 		</Unit>

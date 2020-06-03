@@ -5,6 +5,7 @@ using namespace std;
 int Options::snakeSpeed = 1;/// se masoara in secunde, este convertit * 1000 in ms
 const int Options::minSpeed = 1;
 const int Options::maxSpeed = 5;
+
 void Options::loadOptions(){
   int indentare = 0;
   gotoXY(1, indentare);
