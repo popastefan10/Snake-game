@@ -9,11 +9,13 @@
 #include "Headers/options_menu.h"
 #include "Headers/pause_menu.h"
 #include "Headers/statistics.h"
+#include "Headers/Harta.h"
+
 
 using namespace std;
 
 bool foodSnakeCollision(food&, snake);
-void spawnNewFood(food&, snake);
+void spawnNewFood(food&, snake, Harta);
 bool ateFood(food, snake);
 void drawData(int);
 
@@ -26,6 +28,8 @@ clock_t startTime;
 
 int main() {
 
+
+  Harta harta("harta.in");
   /** ----- start menu ----- **/
 
   while(startMenu()) {
@@ -35,10 +39,11 @@ int main() {
 
     /** ----- the game ----- **/
 
-    drawBorders();
+    harta.displayHarta();
+    //drawBorders();
     drawData(INITIAL_BODY_LENGTH);
 
-    snake playerSnake;
+    snake playerSnake(harta);
     food Food;
     Food.generateColourRange();
     bool noFood = true;
@@ -78,7 +83,7 @@ int main() {
           foodEaten++;
         }
 
-        spawnNewFood(Food, playerSnake);
+        spawnNewFood(Food, playerSnake,harta);
         Food.draw();
         noFood = false;
       }
@@ -90,6 +95,8 @@ int main() {
       if(newDirection != -1 && validDirections(newDirection, playerSnake.getDirection()))
         playerSnake.setDirection(newDirection);
 
+///      spawnNewFood(Food, playerSnake,harta);
+///      Food.draw(); ca sa vad exact daca nu se spawneaza bine, este de test
       playerSnake.moveBody();
 
       Sleep((DWORD) 150);
@@ -110,7 +117,7 @@ int main() {
         system("cls");
       }
 
-      Sleep(1000 / Options::snakeSpeed);
+      Sleep(300);
     }
   }
 
@@ -135,10 +142,16 @@ bool foodSnakeCollision(food &Food, snake Snake) {
 
   return false;
 }
+/// Nic : also prevent spawing on the blocks of the map
+bool foodMapCollision(food &Food,Harta &harta){
+  if(harta.estePerete(Food.getX(),Food.getY()))
+    return true;
+  return false;
+}
 
 /// sets new coordinates for the food
 
-void spawnNewFood(food &Food, snake Snake) {
+void spawnNewFood(food &Food, snake Snake, Harta harta) {
   do {
     srand(time(NULL));
 
@@ -147,7 +160,7 @@ void spawnNewFood(food &Food, snake Snake) {
 
     Food.setX(newX);
     Food.setY(newY);
-  } while(foodSnakeCollision(Food, Snake));
+  } while(foodSnakeCollision(Food, Snake) || foodMapCollision(Food,harta));
 }
 
 /// returns true if the food has been eaten, false otherwise
