@@ -5,6 +5,7 @@
 
 #include <vector>
 #include "snakeBody.h"
+#include "Harta.h"
 
 class snake {
 
@@ -12,9 +13,10 @@ private:
   std::vector <snakeBody> body;
   int direction;
   snakeBody oldTail;
+  Harta harta;
 
 public:
-  snake();
+  snake(Harta);
   ~snake();
 
   int getBodyLength();
