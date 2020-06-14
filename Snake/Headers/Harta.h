@@ -15,6 +15,7 @@ class Harta
         void displayHarta();
         int width,length;
         bool estePerete(int,int);
+
     private:
         int n,m;
         bool perete[100][100];

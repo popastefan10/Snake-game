@@ -102,8 +102,10 @@ int food::getRandomColourIndex() {
 /** ----- draw food ----- **/
 
 void food::draw() {
-  colourIndex = getRandomColourIndex();
   WORD foodColour = getFoodColour();
-
   drawCh(x, y, foodColour, ch);
+}
+
+void food::setNewFoodColour() {
+  colourIndex = getRandomColourIndex();
 }

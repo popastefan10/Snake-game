@@ -32,9 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Headers/Harta.h" />
 		<Unit filename="Headers/food.h" />
 		<Unit filename="Headers/functii.h" />
 		<Unit filename="Headers/help_menu.h" />
+		<Unit filename="Headers/options_menu.h" />
 		<Unit filename="Headers/pause_menu.h">
 			<Option target="Debug" />
 		</Unit>
@@ -42,11 +44,13 @@
 		<Unit filename="Headers/snakeBody.h" />
 		<Unit filename="Headers/start_menu.h" />
 		<Unit filename="Headers/statistics.h" />
+		<Unit filename="Scripts/Harta.cpp" />
 		<Unit filename="Scripts/food.cpp" />
 		<Unit filename="Scripts/functii.cpp" />
 		<Unit filename="Scripts/help_menu.cpp">
 			<Option target="Debug" />
 		</Unit>
+		<Unit filename="Scripts/options_menu.cpp" />
 		<Unit filename="Scripts/pause_menu.cpp">
 			<Option target="Debug" />
 		</Unit>

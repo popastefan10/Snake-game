@@ -121,7 +121,7 @@
 	"../Headers/statistics.h"
 	"../Headers/functii.h"
 
-1591202817 source:c:\stefan\info\jocuri\snake-game\snake\main.cpp
+1592166483 source:c:\stefan\info\jocuri\snake-game\snake\main.cpp
 	<iostream>
 	<cstdio>
 	<time.h>
@@ -130,27 +130,30 @@
 	"Headers/food.h"
 	"Headers/snake.h"
 	"Headers/start_menu.h"
+	"Headers/options_menu.h"
 	"Headers/pause_menu.h"
 	"Headers/statistics.h"
+	"Headers/Harta.h"
 
-1591202817 c:\stefan\info\jocuri\snake-game\snake\headers\food.h
+1592166034 c:\stefan\info\jocuri\snake-game\snake\headers\food.h
 	<windows.h>
 	"functii.h"
 
-1591202817 c:\stefan\info\jocuri\snake-game\snake\headers\functii.h
+1591207166 c:\stefan\info\jocuri\snake-game\snake\headers\functii.h
 	<windows.h>
 	<cstdio>
 	<iostream>
 
-1591202817 c:\stefan\info\jocuri\snake-game\snake\headers\snake.h
+1592159783 c:\stefan\info\jocuri\snake-game\snake\headers\snake.h
 	<vector>
 	"snakeBody.h"
+	"Harta.h"
 
 1591202817 c:\stefan\info\jocuri\snake-game\snake\headers\snakebody.h
 	<windows.h>
 	"functii.h"
 
-1591202817 c:\stefan\info\jocuri\snake-game\snake\headers\start_menu.h
+1591207166 c:\stefan\info\jocuri\snake-game\snake\headers\start_menu.h
 	<windows.h>
 	<iostream>
 	"functii.h"
@@ -163,7 +166,7 @@
 
 1591202817 c:\stefan\info\jocuri\snake-game\snake\headers\statistics.h
 
-1591202817 source:c:\stefan\info\jocuri\snake-game\snake\scripts\food.cpp
+1592166153 source:c:\stefan\info\jocuri\snake-game\snake\scripts\food.cpp
 	<cstdlib>
 	<time.h>
 	"../Headers/food.h"
@@ -181,8 +184,9 @@
 1591202817 source:c:\stefan\info\jocuri\snake-game\snake\scripts\snakebody.cpp
 	"../Headers/snakeBody.h"
 
-1591202817 source:c:\stefan\info\jocuri\snake-game\snake\scripts\start_menu.cpp
+1591207167 source:c:\stefan\info\jocuri\snake-game\snake\scripts\start_menu.cpp
 	"../Headers/start_menu.h"
+	"../Headers/options_menu.h"
 
 1591202817 source:c:\stefan\info\jocuri\snake-game\snake\scripts\statistics.cpp
 	"../Headers/statistics.h"
@@ -265,5 +269,24 @@
 
 1591206545 source:e:\quick access\documents\github\snake-game\snake\scripts\start_menu.cpp
 	"../Headers/start_menu.h"
+	"../Headers/options_menu.h"
+
+1592160354 c:\stefan\info\jocuri\snake-game\snake\headers\harta.h
+	<iostream>
+	<fstream>
+	"../Headers/functii.h"
+
+1591207295 c:\stefan\info\jocuri\snake-game\snake\headers\options_menu.h
+	"../Headers/functii.h"
+
+1592159783 source:c:\stefan\info\jocuri\snake-game\snake\scripts\snake.cpp
+	<iostream>
+	<cstdio>
+	"../Headers/snake.h"
+
+1592160340 source:c:\stefan\info\jocuri\snake-game\snake\scripts\harta.cpp
+	"../Headers/Harta.h"
+
+1591207305 source:c:\stefan\info\jocuri\snake-game\snake\scripts\options_menu.cpp
 	"../Headers/options_menu.h"
 

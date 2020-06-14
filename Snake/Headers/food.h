@@ -44,6 +44,7 @@ public:
   /// draw food
 
   void draw();
+  void setNewFoodColour();
 };
 
 #endif // FOOD_H_INCLUDED

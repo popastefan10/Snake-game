@@ -67,7 +67,8 @@ int main() {
         else { /// draw the game again
           system("cls");
 
-          drawBorders();
+          //drawBorders();
+          harta.displayHarta();
           hideCursor();
 
           playerSnake.draw();
@@ -84,6 +85,7 @@ int main() {
         }
 
         spawnNewFood(Food, playerSnake,harta);
+        Food.setNewFoodColour();
         Food.draw();
         noFood = false;
       }
@@ -142,7 +144,9 @@ bool foodSnakeCollision(food &Food, snake Snake) {
 
   return false;
 }
+
 /// Nic : also prevent spawing on the blocks of the map
+
 bool foodMapCollision(food &Food,Harta &harta){
   if(harta.estePerete(Food.getX(),Food.getY()))
     return true;

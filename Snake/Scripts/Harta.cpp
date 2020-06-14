@@ -4,6 +4,7 @@ Harta::Harta()
 {
     //ctor
 }
+
 Harta::Harta(string numeFisier){
   ifstream in(numeFisier);
   in>>n>>m;
@@ -20,6 +21,7 @@ Harta::Harta(string numeFisier){
     }
   }
 }
+
 void Harta::displayHarta(){
   for(int i = 0; i < n; i++){
     for(int j = 0; j < m; j++){
@@ -30,6 +32,7 @@ void Harta::displayHarta(){
     }
   }
 }
+
 bool Harta::estePerete(int x,int y){
   return perete[y][x];
 }
