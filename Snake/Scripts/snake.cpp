@@ -6,9 +6,12 @@
 int incX[4] = {0, 1, 0, -1};
 int incY[4] = {-1, 0, 1, 0};
 
-snake::snake() {
-  int x = TABLE_LENGTH / 2;
-  int y = TABLE_WIDTH / 2;
+snake::snake(Harta h) {
+//  int x = TABLE_LENGTH / 2;
+//  int y = TABLE_WIDTH / 2;
+  harta = h;
+  int x = h.length / 2;
+  int y = h.width / 2;
 
   for(int i = 0; i < INITIAL_BODY_LENGTH; i++)
     body.push_back(snakeBody(x + i, y));
@@ -68,7 +71,7 @@ bool snake::collision() {
   int headX = body[0].getX();
   int headY = body[0].getY();
 
-  if(headX == 0 || headX == TABLE_LENGTH - 1 || headY == 0 || headY == TABLE_WIDTH - 1)
+  if(headX == 0 || headX == harta.length - 1 || headY == 0 || headY == harta.width - 1 || harta.estePerete(headX,headY))
     return true;
 
   int bodyLength = getBodyLength();
