@@ -121,7 +121,7 @@
 	"../Headers/statistics.h"
 	"../Headers/functii.h"
 
-1592166483 source:c:\stefan\info\jocuri\snake-game\snake\main.cpp
+1592167487 source:c:\stefan\info\jocuri\snake-game\snake\main.cpp
 	<iostream>
 	<cstdio>
 	<time.h>
@@ -276,7 +276,7 @@
 	<fstream>
 	"../Headers/functii.h"
 
-1591207295 c:\stefan\info\jocuri\snake-game\snake\headers\options_menu.h
+1592167251 c:\stefan\info\jocuri\snake-game\snake\headers\options_menu.h
 	"../Headers/functii.h"
 
 1592159783 source:c:\stefan\info\jocuri\snake-game\snake\scripts\snake.cpp

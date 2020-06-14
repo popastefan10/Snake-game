@@ -101,7 +101,7 @@ int main() {
 ///      Food.draw(); ca sa vad exact daca nu se spawneaza bine, este de test
       playerSnake.moveBody();
 
-      Sleep((DWORD) 150);
+      Sleep((DWORD) 1000 / Options::snakeSpeed);
     }
 
     if(!quitPause) {

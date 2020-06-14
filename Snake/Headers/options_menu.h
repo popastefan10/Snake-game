@@ -8,6 +8,7 @@ public:
   static const int minSpeed;
   static const int maxSpeed;
   static int snakeSpeed;
+
   static void loadOptions();
 };
 
