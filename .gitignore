@@ -1,11 +1,6 @@
-
-Snake/Snake.layout
-Snake/Snake.depend
-Snake/Snake.cbp
-Snake/Snake.depend
-Snake/Snake.cbp
-Snake/Snake.depend
 *.layout
-Snake/Snake.layout
-Snake/Snake.depend
-Snake/Snake.cbp
+*.depend
+*.cbp
+
+*.o
+*.exe
