@@ -6,4 +6,4 @@
    
    Next, click on _Build and run_ (or _F9_) and it will open the game window. Enjoy!
    
-   ![](Open_project.png)
+   ![](Run_game.png)
