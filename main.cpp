@@ -29,7 +29,7 @@ clock_t startTime;
 int main() {
 
 
-  Harta harta("harta_originala.txt");
+  Harta harta("original_map.txt");
   /** ----- start menu ----- **/
 
   while(startMenu()) {
