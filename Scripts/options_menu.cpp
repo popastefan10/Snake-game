@@ -4,7 +4,7 @@ using namespace std;
 
 const int Options::minSpeed = 5;
 const int Options::maxSpeed = 10;
-int Options::snakeSpeed = Options::minSpeed;/// se masoara in secunde, este convertit * 1000 in ms
+int Options::snakeSpeed = Options::maxSpeed;/// se masoara in secunde, este convertit * 1000 in ms
 
 void Options::loadOptions() {
   int crtY = 0;
