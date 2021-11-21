@@ -1,6 +1,5 @@
-*.layout
 *.depend
-*.cbp
+*.layout
 
 *.o
 *.exe
